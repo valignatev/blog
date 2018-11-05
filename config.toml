@@ -2,3 +2,7 @@ baseURL = "https://valignatev.com/"
 title = "The most credible computer media since 1812"
 MetaDataFormat = "toml"
 disableKinds = ["sitemap", "RSS"]
+
+[params.social]
+github = 'https://github.com/valignatev'
+twitter = 'https://twitter.com/valignatev'
