@@ -6,3 +6,7 @@ disableKinds = ["sitemap", "RSS"]
 [params.social]
 github = 'https://github.com/valignatev'
 twitter = 'https://twitter.com/valignatev'
+stackoverflow = 'https://stackoverflow.com/users/3606603/valignatev'
+youtube = 'https://www.youtube.com/channel/UCg0V1MkdYkMlwZPU3IuKLMg'
+reddit = 'https://reddit.com/user/valignatev'
+twitch = 'https://twitch.tv/valignatev'

@@ -1,14 +1,22 @@
 {{ define "main" }}
-<center>
-  <img src="/photo.jpg" alt="Oh hello there!" />
+<div>
   <div>
-    I absolutely don't know how you got here!
+    {{ range .Pages }}
+    <article>
+      <!-- this <div> includes the title summary -->
+      <div>
+        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        <div>{{ .Date.Format "January 2, 2006" }}</div>
+        <div>{{ .WordCount }} words</div>
+        {{ .Summary }}
+      </div>
+      {{ if .Truncated }}
+        <div>
+          <a href="{{ .Permalink }}">Read More…</a>
+        </div>
+      {{ end }}
+    </article>
+    {{ end }}
   </div>
-  <div>
-    For now, you can check my
-    <a href="{{ .Site.Params.Social.Github }}">Twitter</a>
-    and
-    <a href="{{ .Site.Params.Social.Github }}">GitHub</a>
-  </div>
-</center>
+</div>
 {{ end }}
