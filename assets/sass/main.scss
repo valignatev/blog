@@ -15,10 +15,14 @@ ul {
 
 .avatar {
   margin: auto;
-  width: 298px;
-  height: 298px;
+  width: 10em;
+  height: 10em;
   overflow: hidden;
   border-radius: 100%;
+  img {
+    width: 10em;
+    margin-top: -0.5em;
+  }
 }
 
 .Social {
