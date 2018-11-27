@@ -1,6 +1,20 @@
+html {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
+  min-height: 100%;
+}
+
+footer {
+  height: 7em;
+  margin-top: 2em;
+  background-color: #555555;
+  color: #fff;
 }
 
 ul {
@@ -8,9 +22,10 @@ ul {
 }
 
 .main {
+  flex: 1;
   margin-left: auto;
   margin-right: auto;
-  width-max: 700px;
+  max-width: 700px;
 }
 
 .avatar {
@@ -25,9 +40,18 @@ ul {
   }
 }
 
-.Social {
+.Social-header {
   margin-top: 1em;
   text-align: center;
+
+  li {
+    display: inline-block;
+  }
+}
+
+.Social-footer {
+  margin-top: 1em;
+  text-align: right;
 
   li {
     display: inline-block;
@@ -70,6 +94,36 @@ ul {
   background: url(/icons/dark_reddit.svg);
 }
 
+.Social-github--light {
+  @extend %Social-icon;
+  background: url(/icons/light_github.svg);
+}
+
+.Social-twitter--light {
+  @extend %Social-icon;
+  background: url(/icons/light_twitter.svg);
+}
+
+.Social-youtube--light {
+  @extend %Social-icon;
+  background: url(/icons/light_youtube.svg);
+}
+
+.Social-twitch--light {
+  @extend %Social-icon;
+  background: url(/icons/light_twitch.svg);
+}
+
+.Social-stackoverflow--light {
+  @extend %Social-icon;
+  background: url(/icons/light_stackoverflow.svg);
+}
+
+.Social-reddit--light {
+  @extend %Social-icon;
+  background: url(/icons/light_reddit.svg);
+}
+
 .PostList-title {
   text-align: center;
 }
@@ -77,4 +131,12 @@ ul {
 .PostList-stat {
   display: inline-block;
   color: #8f8f8f;
+}
+
+.Footer-content {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px;
 }
