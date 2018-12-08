@@ -1,5 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
 html {
   height: 100%;
+  font-size: 18px;
+  font-family: 'Lato', 'Roboto', 'Neue Helvetica', sans-serif;
+  line-height: 1.5em;
 }
 
 body {
@@ -48,7 +58,7 @@ ul {
 }
 
 .Social-header {
-  margin-top: 1em;
+  margin-top: 0.2em;
   text-align: center;
 
   li {
@@ -135,9 +145,42 @@ ul {
   padding:0 0.5em;
 }
 
+.PostList-title {
+  line-height: 1em;
+  margin-top: 0.3em;
+  margin-bottom: 0.5em;
+
+  a {
+    text-decoration: none;
+
+    &:visited {
+      color: inherit;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
 .PostList-stat {
+  margin-bottom: 0.5em;
   display: inline-block;
   color: #8f8f8f;
+}
+
+.PostList-readmore {
+  margin-top: 1em;
+  color: #ff9600;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .Footer-content {
