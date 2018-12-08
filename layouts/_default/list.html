@@ -1,13 +1,16 @@
 {{ define "main" }}
 <div>
-  <div>
+  <div class="PostList">
     {{ range .Pages }}
-    <article>
-      <!-- this <div> includes the title summary -->
-      <div>
-        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-        <div>{{ .Date.Format "January 2, 2006" }}</div>
-        <div>{{ .WordCount }} words</div>
+    <div>
+      <h1 class="PostList-title">
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      </h1>
+      <ul>
+        <li class="PostList-stat">{{ .Date.Format "January 2, 2006" }}</li>
+        <li class="PostList-stat">{{ .WordCount }} words</li>
+      </ul>
+      <div class="PostList-summary">
         {{ .Summary }}
       </div>
       {{ if .Truncated }}
@@ -15,7 +18,7 @@
           <a href="{{ .Permalink }}">Read More…</a>
         </div>
       {{ end }}
-    </article>
+    </div>
     {{ end }}
   </div>
 </div>
