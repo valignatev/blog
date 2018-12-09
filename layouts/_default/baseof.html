@@ -9,7 +9,11 @@
     <link rel="stylesheet" href="{{ $style.Permalink }}">
   </head>
   <body>
-    {{ partial "header.html" . -}}
+    {{ if .IsHome }}
+    {{ partial "home_header.html" . -}}
+    {{ else }}
+    {{ partial "compact_header.html" . -}}
+    {{ end }}
     <main>
       <div id="content">
         {{- block "main" . }}{{- end }}

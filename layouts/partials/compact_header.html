@@ -1,0 +1,14 @@
+<header class="HeaderCompact">
+  <div class="HeaderCompact-content">
+    <nav>
+      <a href="/" title="HOME">HOME</a>
+    </nav>
+    <div class="Social-header">
+      <ul>
+        {{- range .Site.Params.Social -}}
+        <li><a href="{{ .link }}"><span class="Social-{{ .name }}--dark"></span></a></li>
+        {{ end -}}
+      </ul>
+    </div>
+  </div>
+</header>

@@ -10,6 +10,19 @@ $link-underline-color: #ff9600;
   vertical-align: baseline;
 }
 
+%Centered {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+
+  @media(max-width: 700px) {
+    width: 100%;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+}
+
 html {
   height: 100%;
   font-size: $font-size;
@@ -23,6 +36,10 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100%;
+
+  header {
+    margin-top: 1em;
+  }
 }
 
 h1 {
@@ -45,17 +62,8 @@ ul {
 }
 
 main {
-  box-sizing: border-box;
+  @extend %Centered;
   flex: 1;
-  margin-left: auto;
-  margin-right: auto;
-  width: 700px;
-
-  @media(max-width: 700px) {
-    width: 100%;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-  }
 }
 
 .avatar {
@@ -67,6 +75,38 @@ main {
   img {
     width: 7em;
     margin-top: -0.5em;
+  }
+}
+
+.HeaderCompact {
+  margin-top: 0;
+  border-bottom: solid 1px #cfcfcf;
+}
+
+.HeaderCompact-content {
+  @extend %Centered;
+
+  height: 4em;
+  line-height: 1em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  nav {
+    padding: 0 0.5em;
+
+    a {
+      margin-right: 0.5em;
+      text-decoration: none;
+      box-shadow: inset 0 -1px;
+      color: inherit;
+    }
+  }
+
+  .Social-header {
+    margin-top: 0;
   }
 }
 
