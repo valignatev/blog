@@ -1,3 +1,5 @@
+$default-font-size: 17px;
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +9,7 @@
 
 html {
   height: 100%;
-  font-size: 18px;
+  font-size: $default-font-size;
   font-family: 'Lato', 'Roboto', 'Neue Helvetica', sans-serif;
   line-height: 1.5em;
 }
@@ -141,6 +143,22 @@ ul {
   background: url(/icons/light_reddit.svg);
 }
 
+%Icon {
+  width: 1.3em;
+  height: 1.3em;
+  display: inline-block;
+}
+
+.Icon-calendar--light {
+  @extend %Icon;
+  background: url(/icons/light_calendar.svg);
+}
+
+.Icon-clocks--light {
+  @extend %Icon;
+  background: url(/icons/light_clocks.svg);
+}
+
 .PostList {
   padding:0 0.5em;
 }
@@ -148,7 +166,7 @@ ul {
 .PostList-title {
   line-height: 1em;
   margin-top: 0.3em;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.2em;
 
   a {
     text-decoration: none;
@@ -163,10 +181,23 @@ ul {
   }
 }
 
-.PostList-stat {
-  margin-bottom: 0.5em;
-  display: inline-block;
-  color: #8f8f8f;
+.PostList-stats {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  li {
+    margin-right: 1em;
+    margin-bottom: 1.1em;
+    display: inline-block;
+    color: #8f8f8f;
+
+    span {
+      font-size: $default-font-size - 1;
+      vertical-align: top;
+    }
+  }
 }
 
 .PostList-readmore {

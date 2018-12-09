@@ -6,9 +6,15 @@
       <h1 class="PostList-title">
         <a href="{{ .Permalink }}">{{ .Title }}</a>
       </h1>
-      <ul>
-        <li class="PostList-stat">{{ .Date.Format "January 2, 2006" }}</li>
-        <li class="PostList-stat">{{ .WordCount }} words</li>
+      <ul class="PostList-stats">
+        <li>
+          <span class="Icon-calendar--light"></span>
+          <span>{{ .Date.Format "January 2, 2006" }}</span>
+        </li>
+        <li>
+          <span class="Icon-clocks--light"></span>
+          <span>{{ div .WordCount 200 }} minutes read</span>
+        </li>
       </ul>
       <div class="PostList-summary">
         {{ .Summary }}
