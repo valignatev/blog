@@ -159,14 +159,18 @@ ul {
   background: url(/icons/light_clocks.svg);
 }
 
-.PostList {
+.Post {
   padding:0 0.5em;
 }
 
-.PostList-title {
-  line-height: 1em;
-  margin-top: 0.3em;
-  margin-bottom: 0.2em;
+.Post-title {
+  margin-top: 1.1em;
+  margin-bottom: 0.7em;
+
+  h1 {
+    margin-bottom: 0.2em;
+    line-height: 1em;
+  }
 
   a {
     text-decoration: none;
@@ -181,7 +185,7 @@ ul {
   }
 }
 
-.PostList-stats {
+.Post-stats {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -189,7 +193,6 @@ ul {
 
   li {
     margin-right: 0.7em;
-    margin-bottom: 1.1em;
     display: inline-block;
     color: #8f8f8f;
 
@@ -200,7 +203,7 @@ ul {
   }
 }
 
-.PostList-readmore {
+.Post-readmore {
   margin-top: 1em;
   color: #ff9600;
 
