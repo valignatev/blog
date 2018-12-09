@@ -1,8 +1,8 @@
 {{ define "main" }}
-<div>
-  <div class="Post">
+<div class="Post">
+  <section>
     {{ range .Pages }}
-    <div>
+    <article>
       {{- partial "title.html" . -}}
       <div class="Post-summary">
         {{ .Summary }}
@@ -12,8 +12,8 @@
           <a href="{{ .Permalink }}">CONTINUE...</a>
         </div>
       {{ end }}
-    </div>
+    </article>
     {{ end }}
-  </div>
+  </section>
 </div>
 {{ end }}

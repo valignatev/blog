@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="{{ $style.Permalink }}">
   </head>
   <body>
-    <div class="main">
-      {{ partial "header.html" . -}}
+    {{ partial "header.html" . -}}
+    <main>
       <div id="content">
         {{- block "main" . }}{{- end }}
       </div>
-    </div>
+    </main>
     {{- partial "footer.html" . -}}
   </body>
 </html>

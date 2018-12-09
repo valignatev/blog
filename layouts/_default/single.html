@@ -1,6 +1,10 @@
 {{ define "main" }}
 <div class="Post">
-  {{- partial "title.html" . -}}
-  {{ .Content }}
+  <section>
+    <article>
+      {{- partial "title.html" . -}}
+      {{ .Content }}
+    </article>
+  </section>
 </div>
 {{ end }}
