@@ -1,4 +1,5 @@
-$default-font-size: 17px;
+$font-size: 17px;
+$link-underline-color: #ff9600;
 
 * {
   margin: 0;
@@ -9,7 +10,7 @@ $default-font-size: 17px;
 
 html {
   height: 100%;
-  font-size: $default-font-size;
+  font-size: $font-size;
   font-family: 'Lato', 'Roboto', 'Neue Helvetica', sans-serif;
   line-height: 1.5em;
 }
@@ -24,6 +25,10 @@ body {
 
 h1 {
   font-size: 2em;
+}
+
+h2 {
+  color: #555;
 }
 
 footer {
@@ -168,6 +173,25 @@ main {
 
   p {
     margin: 1.5em 0;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      box-shadow: inset 0 -3px 0 $link-underline-color;
+    }
+
+    code {
+      background-color: #faeede;
+    }
+  }
+}
+
+.highlight {
+  font-size: 0.9em;
+  font-family: monospace;
+  pre {
+    padding: 0 0.2em;
+    overflow-x: auto;
   }
 }
 
@@ -177,10 +201,11 @@ main {
 
   h1 {
     margin-bottom: 0.2em;
-    line-height: 1em;
+    line-height: 1.1em;
   }
 
   a {
+    color: inherit;
     text-decoration: none;
 
     &:visited {
@@ -205,15 +230,19 @@ main {
     color: #8f8f8f;
 
     span {
-      font-size: $default-font-size - 1;
+      font-size: $font-size - 1;
       vertical-align: top;
     }
   }
 }
 
+.Post-summary p {
+  margin: 0;
+}
+
 .Post-readmore {
-  margin-top: 1em;
-  color: #ff9600;
+  margin-top: 0.8em;
+  color: $link-underline-color;
 
   a {
     text-decoration: none;
