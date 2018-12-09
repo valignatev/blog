@@ -1,3 +1,5 @@
+@import 'syntax';
+
 $font-size: 17px;
 $link-underline-color: #ff9600;
 
@@ -181,7 +183,7 @@ main {
     }
 
     code {
-      background-color: #faeede;
+      background-color: #f0f3f3;
     }
   }
 }
@@ -189,8 +191,10 @@ main {
 .highlight {
   font-size: 0.9em;
   font-family: monospace;
+  line-height: 1.4em;
+
   pre {
-    padding: 0 0.2em;
+    padding: 0.2em 0.2em;
     overflow-x: auto;
   }
 }
