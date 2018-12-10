@@ -3,7 +3,7 @@
     <div class="Social-footer">
       <ul>
 	{{- range .Site.Params.Social -}}
-	<li><a href="{{ .link }}"><span class="Social-{{ .name }}--light"></span></a></li>
+	<li><a href="{{ .link }}" title="{{ .name }}"><span class="Social-{{ .name }}--light"></span></a></li>
 	{{ end -}}
       </ul>
     </div>

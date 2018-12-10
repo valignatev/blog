@@ -6,7 +6,7 @@
     <div class="Social-header">
       <ul>
         {{- range .Site.Params.Social -}}
-        <li><a href="{{ .link }}"><span class="Social-{{ .name }}--dark"></span></a></li>
+        <li><a href="{{ .link }}" title="{{ .name }}"><span class="Social-{{ .name }}--dark"></span></a></li>
         {{ end -}}
       </ul>
     </div>
