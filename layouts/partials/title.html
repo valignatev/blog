@@ -9,7 +9,7 @@
     </li>
     <li>
       <span class="Icon-clocks--light"></span>
-      <span>{{ div .WordCount 200 }} minutes read</span>
+      <span>{{ div .WordCount 200.0 | math.Round }} minutes read</span>
     </li>
   </ul>
 </header>
