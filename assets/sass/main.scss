@@ -26,7 +26,7 @@ $link-underline-color: #ff9600;
 html {
   height: 100%;
   font-size: $font-size;
-  font-family: 'Lato', 'Roboto', 'Neue Helvetica', sans-serif;
+  font-family: sans-serif;
   line-height: 1.5em;
 }
 
@@ -36,6 +36,10 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100%;
+  // Stolen from somewhere, don't judge
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+               'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
+               'Segoe UI Emoji', 'Segoe UI Symbol';
 
   header {
     margin-top: 1em;
