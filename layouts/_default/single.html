@@ -6,5 +6,8 @@
       {{ .Content }}
     </article>
   </section>
+  <section class="Post-comments">
+    {{ template "_internal/disqus.html" . }}
+  </section>
 </div>
 {{ end }}

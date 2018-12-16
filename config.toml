@@ -3,6 +3,7 @@ title = 'The most credible computer media since 1812'
 MetaDataFormat = 'toml'
 disableKinds = ['sitemap', 'RSS']
 enableRobotsTXT = true
+disqusShortname = 'valignatev'
 enableGitInfo = true
 pygmentsUseClasses=true
 pygmentsCodeFences=true
