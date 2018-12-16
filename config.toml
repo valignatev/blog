@@ -23,3 +23,6 @@ link = 'https://twitch.tv/valignatev'
 [[params.social]]
 name = 'reddit'
 link = 'https://reddit.com/user/valignatev'
+[[params.social]]
+name = 'email'
+link = 'mailto:valentignatev@gmail.com'
