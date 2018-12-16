@@ -183,6 +183,11 @@ sup {
   background: url(/icons/dark_reddit.svg);
 }
 
+.Social-email--dark {
+  @extend %Social-icon;
+  background: url(/icons/dark_email.svg);
+}
+
 .Social-github--light {
   @extend %Social-icon;
   background: url(/icons/light_github.svg);
@@ -211,6 +216,11 @@ sup {
 .Social-reddit--light {
   @extend %Social-icon;
   background: url(/icons/light_reddit.svg);
+}
+
+.Social-email--light {
+  @extend %Social-icon;
+  background: url(/icons/light_email.svg);
 }
 
 %Icon {
