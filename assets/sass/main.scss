@@ -227,19 +227,19 @@ kbd {
 .Post {
   padding:0 0.5em;
 
+  a {
+    color: inherit;
+    text-decoration: none;
+    box-shadow: inset 0 -3px 0 $link-underline-color;
+  }
+
+  code {
+    white-space: nowrap;
+    background-color: #f0f3f3;
+  }
+
   p {
     margin: 1.5em 0;
-
-    a {
-      color: inherit;
-      text-decoration: none;
-      box-shadow: inset 0 -3px 0 $link-underline-color;
-    }
-
-    code {
-      white-space: nowrap;
-      background-color: #f0f3f3;
-    }
   }
 
   figure > img {
@@ -257,6 +257,10 @@ kbd {
   pre {
     padding: 0.2em 0.2em;
     overflow-x: auto;
+
+    code {
+      white-space: inherit;
+    }
   }
 }
 
