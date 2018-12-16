@@ -2,6 +2,7 @@ baseURL = 'https://valignatev.com/'
 title = 'The most credible computer media since 1812'
 MetaDataFormat = 'toml'
 disableKinds = ['sitemap', 'RSS']
+enableRobotsTXT = true
 pygmentsUseClasses=true
 pygmentsCodeFences=true
 
