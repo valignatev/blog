@@ -8,10 +8,13 @@
     <meta name="keywords" content="
       {{- range $i, $e := . }}{{ if $i}},{{ end }}{{ $e }}{{- end -}}"/>
     {{- end }}
-    <meta name="author" content="{{ .Site.Params.Author }}"/>
+    <meta name="author" content="{{ .Site.Author.name }}"/>
     <title>{{ .Title }}</title>
     {{- $options := (dict "outputStyle" "compressed" "enableSourceMap" true) }}
     {{- $style := resources.Get "sass/main.scss" | resources.ToCSS $options }}
+    {{ with .OutputFormats.Get "rss" -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end -}}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
   </head>
   <body>

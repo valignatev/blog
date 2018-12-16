@@ -1,15 +1,21 @@
 baseURL = 'https://valignatev.com/'
 title = 'The most credible computer media since 1812'
 MetaDataFormat = 'toml'
-disableKinds = ['sitemap', 'RSS']
 enableRobotsTXT = true
 disqusShortname = 'valignatev'
 enableGitInfo = true
 pygmentsUseClasses=true
 pygmentsCodeFences=true
 
-[params]
-author = 'Valentin Ignatev'
+[taxonomies]
+
+[sitemap]
+changefreq = 'weekly'
+filename = 'sitemap.xml'
+
+[author]
+email = 'valentignatev@gmail.com'
+name = 'Valentin Ignatev'
 
 [[params.social]]
 name = 'twitter'
