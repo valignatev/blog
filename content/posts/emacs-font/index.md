@@ -115,7 +115,7 @@ reset the font size functions:
   (interactive)
   (set-frame-font-size (- my-font-size 1)))
 
-(defun adjust-frame-font ()
+(defun reset-frame-font ()
   (interactive)
   (set-frame-font-size))
 ```
@@ -137,7 +137,7 @@ Here what we have in the end, with bits of documentation added:
 
 (defun set-frame-font-size (&optional font-size)
   "Change frame font size to FONT-SIZE.
-If no FONT-SIZE provided, adjust the size to its default variable."
+If no FONT-SIZE provided, reset the size to its default variable."
   (let ((font-size
      (or font-size
        (car (get 'my-font-size 'standard-value)))))
@@ -155,7 +155,7 @@ If no FONT-SIZE provided, adjust the size to its default variable."
   (interactive)
   (set-frame-font-size (- my-font-size 1)))
 
-(defun adjust-frame-font ()
+(defun reset-frame-font ()
   "Reset frame font to its default value."
   (interactive)
   (set-frame-font-size))
