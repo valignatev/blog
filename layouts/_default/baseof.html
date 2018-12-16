@@ -3,6 +3,12 @@
   <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1"/>
+    <meta name="description" content="{{ .Description }}"/>
+    {{ with .Keywords -}}
+    <meta name="keywords" content="
+      {{- range $i, $e := . }}{{ if $i}},{{ end }}{{ $e }}{{- end -}}"/>
+    {{- end }}
+    <meta name="author" content="{{ .Site.Params.Author }}"/>
     <title>{{ .Title }}</title>
     {{- $options := (dict "outputStyle" "compressed" "enableSourceMap" true) }}
     {{- $style := resources.Get "sass/main.scss" | resources.ToCSS $options }}
