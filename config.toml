@@ -6,6 +6,8 @@ disqusShortname = 'valignatev'
 enableGitInfo = true
 pygmentsUseClasses=true
 pygmentsCodeFences=true
+[blackfriday]
+hrefTargetBlank = true
 
 [taxonomies]
 
