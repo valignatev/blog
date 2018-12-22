@@ -171,4 +171,4 @@ tools we use every day.
 Reddit](https://www.reddit.com/r/emacs/comments/a6p7qr/blog_post_how_to_change_emacs_font_with/).
 People there suggested some interesting alternative solutions.
 
-[^1]: `frame` is a fancy word in Emacs to describe a separate ndependent window. Like, for example, a separate browser indow. Emacs is 200 years old, remember?
+[^1]: `frame` is a fancy word in Emacs to describe a separate independent window. Like, for example, a separate browser indow. Emacs is 200 years old, remember?
