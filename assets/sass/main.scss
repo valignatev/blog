@@ -85,6 +85,10 @@ sup {
   font-size: smaller;
 }
 
+article ol {
+  margin-left: 2em;
+}
+
 .avatar {
   margin: auto;
   width: 7em;
@@ -279,7 +283,7 @@ sup {
   }
 }
 
-.footnotes {
+.footnotes ol {
   margin-left: 1em;
 }
 
