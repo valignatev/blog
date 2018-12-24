@@ -27,7 +27,7 @@ supports Linux as well).
 "Open default terminal in the project root."
   (interactive)
   (let ((default-directory (projectile-project-root)))
-    (open-terminal))
+    (open-terminal)))
 ```
 
 These two functions are basically it. They'll open the terminal in the
@@ -81,6 +81,8 @@ leverage GPU for rendering. It also makes perfect sense if you're
 using a tiling window manager and rely heavily on having multiple
 terminals laying around. And people
 [asking](https://emacs.stackexchange.com/q/7650/13740) for it.
+
+Check the discussion on [Reddit](https://www.reddit.com/r/emacs/comments/a8zk79/blog_using_emacs_with_external_terminals/).
 
 [^1]: Project root is, for example, the directory where your `.git` resides.
 [^2]: There's also `vc-root-dir` available since Emacs 25.1 out of the box. `terminal-here` [falls back](https://github.com/davidshepherd7/terminal-here/blob/master/terminal-here.el#L151) to it
