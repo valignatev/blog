@@ -8,6 +8,9 @@
       {{- range .Site.Params.Social -}}
         <li><a href="{{ .link }}" title="{{ .name }}"><span class="Social-{{ .name }}--dark"></span></a></li>
       {{ end -}}
+      {{ with .OutputFormats.Get "rss" -}}
+        <li><a href="{{ .Permalink }}" title="RSS for this page"><span class="Social-rss--dark"></span></a></li>
+      {{ end -}}
     </ul>
   </div>
 </header>

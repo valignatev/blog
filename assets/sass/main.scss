@@ -192,6 +192,11 @@ article ol {
   background: url(/icons/dark_email.svg);
 }
 
+.Social-rss--dark {
+  @extend %Social-icon;
+  background: url(/icons/dark_rss.svg);
+}
+
 .Social-github--light {
   @extend %Social-icon;
   background: url(/icons/light_github.svg);
@@ -225,6 +230,11 @@ article ol {
 .Social-email--light {
   @extend %Social-icon;
   background: url(/icons/light_email.svg);
+}
+
+.Social-rss--light {
+  @extend %Social-icon;
+  background: url(/icons/light_rss.svg);
 }
 
 %Icon {
