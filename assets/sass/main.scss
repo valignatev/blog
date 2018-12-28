@@ -43,6 +43,7 @@ body {
 
   header {
     margin-top: 1em;
+    margin-bottom: 1em;
   }
 }
 
@@ -70,6 +71,10 @@ main {
   flex: 1;
 }
 
+article {
+  margin-bottom: 3em;
+}
+
 kbd {
   background-color: #f0f3f3;
   padding: 0.1em 0.5em;
@@ -90,7 +95,10 @@ article ol {
 }
 
 .avatar {
-  margin: auto;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.5em;
   width: 7em;
   height: 7em;
   overflow: hidden;
@@ -136,6 +144,10 @@ article ol {
 .Social-header {
   margin-top: 0.2em;
   text-align: center;
+
+  ul {
+    margin-top: 0.5em;
+  }
 
   li {
     display: inline-block;
