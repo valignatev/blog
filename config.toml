@@ -8,6 +8,7 @@ pygmentsUseClasses=true
 pygmentsCodeFences=true
 [blackfriday]
 hrefTargetBlank = true
+smartypants = false
 
 [taxonomies]
 
