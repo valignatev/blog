@@ -10,11 +10,13 @@
     {{- end }}
     <meta name="author" content="{{ .Site.Author.name }}"/>
     {{ template "_internal/opengraph.html" . }}
+    {{ if .IsHome }}
     {{- with .Site.Params.images -}}
       {{- range first 6 . -}}
         <meta property="og:image" content="{{ . | absURL}}">
       {{- end -}}
     {{- end -}}
+    {{ end }}
     <title>{{ .Title }}</title>
     {{- $options := (dict "outputStyle" "compressed" "enableSourceMap" true) }}
     {{- $style := resources.Get "sass/main.scss" | resources.ToCSS $options }}
