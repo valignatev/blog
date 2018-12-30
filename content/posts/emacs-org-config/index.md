@@ -93,3 +93,8 @@ a regular software project.
 Meanwhile, I'd gladly hear what possible advantages of an org style
 config am I missing. Maybe there is something that would outweigh cons
 which are deal-breakers for me now.
+
+Check the discussion on
+[Reddit](https://www.reddit.com/r/emacs/comments/aazjl5/blog_how_im_failing_literate_config_in_emacs/). As
+always, people there suggested lots of interesting ways how they deal
+with inconveniences I've mentioned earlier.
