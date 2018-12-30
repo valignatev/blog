@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1"/>
     <meta name="description" content="{{ .Description }}"/>
     {{ with .Keywords -}}
-    <meta name="keywords" content="
-      {{- range $i, $e := . }}{{ if $i}},{{ end }}{{ $e }}{{- end -}}"/>
+      <meta name="keywords" content="
+        {{- range $i, $e := . }}{{ if $i}},{{ end }}{{ $e }}{{- end -}}"/>
     {{- end }}
     <meta name="author" content="{{ .Site.Author.name }}"/>
     {{ template "_internal/opengraph.html" . }}
+    {{- with .Site.Params.images -}}
+      {{- range first 6 . -}}
+        <meta property="og:image" content="{{ . | absURL}}">
+      {{- end -}}
+    {{- end -}}
     <title>{{ .Title }}</title>
     {{- $options := (dict "outputStyle" "compressed" "enableSourceMap" true) }}
     {{- $style := resources.Get "sass/main.scss" | resources.ToCSS $options }}

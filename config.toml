@@ -20,6 +20,9 @@ filename = 'sitemap.xml'
 email = 'valentignatev@gmail.com'
 name = 'Valentin Ignatev'
 
+[params]
+images = ['logo.png']
+
 [[params.social]]
 name = 'twitter'
 link = 'https://twitter.com/valignatev'
