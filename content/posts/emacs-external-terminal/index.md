@@ -4,6 +4,7 @@ tags = ['editors', 'emacs']
 date = '2018-12-24T01:45:00+0300'
 description = 'Learn how to open your default terminal from within emacs in the project root or in the current directory'
 keywords = ['editors', 'emacs', 'elisp', 'emacs-lisp', 'terminal', 'blog', 'init.el', 'emacs.d', 'linux', 'environment variables']
+images = ['posts/emacs-external-terminal/emacs-external-terminal.png']
 +++
 How to integrate your terminal with Emacs in an quick way and open it based on
 the current project or current working directory.

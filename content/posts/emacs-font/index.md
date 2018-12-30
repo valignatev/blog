@@ -4,6 +4,7 @@ tags = ['editors', 'emacs']
 date = '2018-12-16T15:35:00+0300'
 description = "We'll learn how to change Emacs font for the whole frame, not only current window, and touch a little bit how Emacs customization system works."
 keywords = ['editors', 'emacs', 'elisp', 'emacs-lisp', 'font size', 'blog', 'init.el', 'emacs.d', 'linux']
+images = ['posts/emacs-font/emacs-font.png']
 +++
 I see how people struggle with Emacs font size all the time in
 their live demos. Well, enough is enough!

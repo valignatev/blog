@@ -9,6 +9,7 @@
       {{- range $i, $e := . }}{{ if $i}},{{ end }}{{ $e }}{{- end -}}"/>
     {{- end }}
     <meta name="author" content="{{ .Site.Author.name }}"/>
+    {{ template "_internal/opengraph.html" . }}
     <title>{{ .Title }}</title>
     {{- $options := (dict "outputStyle" "compressed" "enableSourceMap" true) }}
     {{- $style := resources.Get "sass/main.scss" | resources.ToCSS $options }}

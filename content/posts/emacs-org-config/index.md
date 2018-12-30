@@ -4,6 +4,7 @@ tags = ['editors', 'emacs']
 date = '2018-12-30T22:43:00+0300'
 description = "Read about how I've tried to rewrite my Emacs config into a literate style and why I didn't like it"
 keywords = ['editors', 'emacs', 'elisp', 'emacs-lisp', 'blog', 'init.el', 'emacs.d', 'org-mode']
+images = ['posts/emacs-org-config/emacs-org-config.png']
 +++
 My personal experience with the literate config style in Emacs as of the
 end of 2018, and why I think I don't like it.
